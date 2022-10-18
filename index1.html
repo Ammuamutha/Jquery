@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css">
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src=”https://code.jquery.com/jquery-3.6.0.min.js”></script>
+      <script src="validate.js"></script> 
+</head>
+<body>
+    <div class="input_container">
+        <form action="">
+                <h1>Registration form</h1>
+                <div class="editor-label">
+                    <label>Name</label>
+                    <span><input id="Name" class="form-control" placeholder="enter your name"></span>
+                    <p class="colorError"><span id="error-data-first">Required</span></p>
+                </div>  
+                <div class="editor-label">
+                    <label>Email</label>
+                    <span><input id="Email" class="form-control" placeholder="enter your email"></span>
+                    <p class="colorError"><span id="invalid-error">Invalid email</span><span id="error-data-email">Required</span></p>
+                </div>   
+                <div class="editor-label">
+                    <label>MobileNumber</label>
+                    <span><input id="phone" class="form-control" placeholder="+91 9876543210" maxlength="10"></span>
+                    <p class="colorError"><span id="error-data-phone">Required</span></p>
+                </div> 
+                <div class="editor-label">
+                    <label>Subject</label>
+                    <span><input id="subject" class="form-control" placeholder="enter your subject"></span>
+                    <p class="colorError"><span id="error-data-subject">Required</span></p>
+                </div> 
+                <div class="editor-label">
+                    <label>Message</label>
+                    <span><textarea id="formMessage" placeholder="enter your message"cols="30" rows="5"></textarea></span>
+                    <!-- <p class="colorError"><span id="error-data-message">Required</span></p> -->
+                </div> 
+                <div>
+                    <input id="button-register" type="submit" value="submit" />
+                </div>
+            </form>   
+    </div>
+   
+
+</body>
+</html>
